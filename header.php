@@ -11,7 +11,7 @@
   <!-- Définir la variable page dans chaque page -->
 </head>
 <header>
-  <h1 class="text-center text-white pb-5">Exercices PHP</h1>
+  <h1 class="text-center text-white pb-5">Exercices PHP - Les conditions</h1>
   <!--Navbar -->
   <nav class="mb-1 navbar navbar-expand-lg navbar-dark default-color">
     <a class="navbar-brand" href="#">PARTIE 2</a>

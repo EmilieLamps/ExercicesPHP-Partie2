@@ -1,6 +1,7 @@
 <?php
 $page = "Exercice 2"; // Définir la variable pour changer le titre !
 $isEasy = true;
+$message ='';
 include '../header.php';
  ?>
  <h2 class="text-primary text-center pt-5 pb-5 font-weight-bold">Exercice 2</h2>
@@ -9,10 +10,13 @@ Afficher C'est facile!! si c'est vrai. Dans le cas contraire afficher C'est diff
 Bonus : L'écrire de deux manières différentes.</h3>
 <?php
 if ($isEasy) {
-  echo 'C\'est facile !!';
+  $message = 'C\'est facile !!';
 }
 else {
-  echo 'C\'est difficile !!!';
+  $message = 'C\'est difficile !!!';
 }
+?>
+<p><?= $message ?></p>
+<?php
 include '../footer.php';
 ?>

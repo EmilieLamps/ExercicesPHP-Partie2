@@ -1,6 +1,7 @@
 <?php
 $page = "Exercice 1"; // Définir la variable pour changer le titre !
 $age = 28;
+$message = '';
 include '../header.php';
  ?>
  <h2 class="text-primary text-center pt-5 pb-5 font-weight-bold">Exercice 1</h2>
@@ -8,10 +9,13 @@ include '../header.php';
 Si l'âge est supérieur ou égale à 18, afficher Vous êtes majeur. Dans le cas contraire, afficher Vous êtes mineur.</h3>
 <?php
   if ($age >=18) {
-    echo 'Vous êtes majeur';
+    $message = "Vous êtes majeur";
   }
   else {
-    echo 'Vous êtes mineur';
+    $message = "Vous êtes mineur";
   }
+?>
+<p><?= $message ?></p>
+<?php
 include '../footer.php';
 ?>
